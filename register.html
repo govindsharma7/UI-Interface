@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/font-family-css.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
+<body>
+	<header>
+		<div style="width: 20%;float:  left;padding: 1%;"><span class="login101-flogo"><h1>TRAVELS</h1></span></div>
+		<div style="width: 60%;float:  right;text-align:  right;padding: 1%;"><i class="fas fa-at"></i> &nbsp;info@travel.com<br><i class="fa fa-phone header"></i>&nbsp;+91 - 987 654 3210</div>
+		
+	</header>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<!-- <span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span> -->
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						New User
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter email">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="pass" placeholder="New Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Confirm password">
+						<input class="input100" type="password" name="conf_pass" placeholder="Confirm Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Register
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="/home/asm/Documents/login_form/Login_v3/Login_v3/index.html">
+							Already have account?
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="dropDownSelect1"></div>
+
+	<!--Forgot password Modal -->
+	  <div class="modal fade" id="forgotModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Forgot Password</h4>
+	        </div>
+	        <div class="modal-body" style="background: #C1E3F4;">
+	          <div class="wrap-input100 validate-input" data-validate = "Enter email">
+					<input class="input100" type="email" name="email" placeholder="E-mail">
+					<span class="focus-input100" data-placeholder="&#xf207;"></span>
+				</div>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+
+	<footer><div>Copyright &copy; 2018 Travels.com&nbsp;|&nbsp;<i class="fab fa-facebook-square footer101-icon"></i>&nbsp;<i class="fab fa-google-plus-square footer101-icon"></i>&nbsp;<i class="fab fa-twitter-square footer101-icon"></i>&nbsp;<i class="fab fa-linkedin footer101-icon"></i></div></footer>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#signupForm").validate({
+			rules: {
+				firstname: "required",
+				lastname: "required",
+				username: {
+					required: true,
+					minlength: 2
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				topic: {
+					required: "#newsletter:checked",
+					minlength: 2
+				},
+				agree: "required"
+			},
+			messages: {
+				firstname: "Please enter your firstname",
+				lastname: "Please enter your lastname",
+				username: {
+					required: "Please enter a username",
+					minlength: "Your username must consist of at least 2 characters"
+				},
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				confirm_password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				email: "Please enter a valid email address",
+				agree: "Please accept our policy",
+				topic: "Please select at least 2 topics"
+			}
+		});
+	});
+
+	function send_email() {
+		if ($("#emailInput").val() != "") {
+			$.ajax({
+				url: "",
+				type: "POST",
+				contentType: 'application/json; charset=UTF-8',
+				data: JSON.stringify({"email" : $("#emailInput").val()}),
+				success: function(data) {
+					alert('Email send succesfully');
+				}
+			});
+		} else {
+			alert("Invalid Email.")
+			return false;
+		}
+	}
+
+	function login() {
+
+	}
+</script>
